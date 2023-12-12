@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newstyle.css">
+    <script src="main2.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">ArcticLens</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="newpage">
+        <div class="mintedImage">
+            <img src="image/1.jpg" alt="Photo 1">
+        </div>
+    
+        <div class="information">
+            <h1>PolarEye</h1>
+            <p>
+                Price: 0.32ETH<br>
+                Region: KAKTOVIK, ALASKA <br>
+                <br>
+            </p>
+            <button id="mintButton" onclick="mintPolar()">Mint</button>
+            <div class="weather">
+                <iframe id="weatherIframe" src="https://indify.co/widgets/live/weather/zCkMjQtchceXXkVOg62t"width="300" height="150"></iframe>
+            </div>
+            <canvas id="priceChart" width="500" height="200"></canvas>
+        </div>
+    </div>
+
+    <script>
+        function mintPolar() {
+            // Add your minting logic here
+            alert("PolarEye has been minted!");
+        }
+    </script>
+
+</body>
+</html>

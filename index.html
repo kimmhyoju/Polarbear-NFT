@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+
+<body>
+    <div class="landing">
+        <h1>Welcome to ArcticLens</h1>
+        <br>
+        <br>
+        <p>Discover the beauty of the Arctic through unique NFTs that reflect the changing climate</p>
+    </div>
+
+    <div class="content" id="content">
+    <header>
+        <div class="logo">ArcticLens</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="weather">
+        <iframe id="weatherIframe"></iframe>
+
+        <script>
+              const embeddedLink = 'https://indify.co/widgets/live/weather/zCkMjQtchceXXkVOg62t';
+        </script>
+    </div>
+
+    <div class="bearNft">
+        <h1>Save the Bears<span class="arrow">&#8594;</span></h1>
+    <div class="imageContainer">
+
+
+        <div class="mintedImage">
+            <img src="image/1.jpg" alt="Photo 1" onclick="openContent('content1.html')">
+            
+            <div class="info-container">
+                <p class="left-align">PolarEye<br><span class="price">0.32ETH</span></p>
+                <button id="mintButton" onclick="mintPolar1()" class="right-align">Mint</button>
+            </div>
+        </div>
+    
+
+        <div class="mintedImage">
+            <img src="image/2.jpg" alt="Photo 2">
+            
+            <div class="info-container">
+                <p class="left-align">PolarHand<br><span class="price">0.4ETH</span></p>
+                <button id="mintButton" onclick="mintPolar2()" class="right-align">Mint</button>
+            </div>
+        </div>
+    
+        <div class="mintedImage">
+            <img src="image/6.jpg" alt="Photo 1">
+            
+            <div class="info-container">
+                <p class="left-align">PolarTwin<br><span class="price">0.54ETH</span></p>
+                <button id="mintButton" onclick="mintPolar3()" class="right-align">Mint</button>
+            </div>
+        </div>
+        <!-- <div class="mintedImage" onclick="openContent('content1.html')">
+            <img src="image/11.jpg" alt="Photo 1">
+            <p class="imageInfo">Polar4<br>Price: 100</p>
+            <button id="mintButton">Mint</button>
+        </div>
+    
+        <div class="mintedImage" onclick="openContent('content1.html')">
+            <img src="image/5.jpg" alt="image">
+            <p class="imageInfo">Polar5<br>Price: 98</p>
+            <button id="mintButton">Mint</button>
+        </div>
+    
+        <div class="mintedImage" onclick="openContent('content1.html')">
+            <img src="image/3.jpg" alt="image">
+            <p class="imageInfo">Polar6<br>Price: 76</p>
+            <button id="mintButton">Mint</button>
+        </div> -->
+     </div>
+    </div>
+
+    <script>
+        function mintPolar1() {
+            alert("PolarEye has been minted!");
+        }
+        function mintPolar2() {
+            alert("PolarHand has been minted!");
+        }
+        function mintPolar3() {
+            alert("PolarTwin has been minted!");
+        }
+    </script>
+    
+    <script>
+        function openContent(contentURL) {
+            window.open(contentURL, '_blank');
+        }
+    </script>
+    </div>
+
+
+</body>
+</html>
